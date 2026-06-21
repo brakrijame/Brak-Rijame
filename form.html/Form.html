@@ -3,20 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f9;
+        }
+        .form-container {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 400px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>video</h1>
-    
-    
 
-       
-       
-    
-    
-    
+<div class="form-container">
+    <h2>ទម្រង់ចុះឈ្មោះ (Sign Up)</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">ឈ្មោះពេញ (Full Name):</label>
+            <input type="text" id="name" placeholder="វាយឈ្មោះរបស់អ្នកនៅទីនេះ">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">អ៊ីមែល (Email):</label>
+            <input type="email" id="email" placeholder="ឧទាហរណ៍: name@gmail.com">
+        </div>
 
-    
-   
+        <div class="form-group">
+            <label for="password">លេខកូដសម្ងាត់ (Password):</label>
+            <input type="password" id="password" placeholder="វាយលេខកូដសម្ងាត់">
+        </div>
+
+        <button type="submit">ចុះឈ្មោះឥឡូវនេះ</button>
+    </form>
+</div>
+
 </body>
 </html>
